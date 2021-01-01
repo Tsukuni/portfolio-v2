@@ -1,65 +1,91 @@
-import Head from 'next/head'
+import Image from 'next/image';
 import styles from '../../styles/Home.module.scss'
+import { AiOutlineUser } from 'react-icons/ai';
+import { GrPersonalComputer } from 'react-icons/gr';
+import SnsIconList from '../components/SnsIconList';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <>
+      <div className={styles.card}>
+        <div className={styles.imageBox}>
+          <Image
+            src="/icon.jpg"
+            alt="icon"
+            width={200}
+            height={200}
+          />
         </div>
-      </main>
+        <div className={styles.head}>
+          <AiOutlineUser className={styles.icon} />
+          <span className={styles.iconText}>Kenta Tsukuni</span>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+          <GrPersonalComputer className={styles.icon} />
+          <span className={styles.iconText}>Engineer</span>
+        </div>
+
+        <div className={styles.description}>
+          <div className={styles.row}>
+            <div className={styles.cell}>
+              2019.04 - now
+            </div>
+            <div className={styles.cell}>
+              COUNTERWORKS, Inc.
+            </div>
+          </div>
+
+          <div className={styles.row}>
+            <div className={styles.cell}>
+              2019.12 - 2020.09
+            </div>
+            <div className={styles.cell}>
+              YOUTRUST, Inc.
+              <span className={styles.badge}>sidejob</span>
+            </div>
+          </div>
+
+          <div className={styles.row}>
+            <div className={styles.cell}>
+              2019.10 - now
+            </div>
+            <div className={styles.cell}>
+              and, Inc.
+              <span className={styles.badge}>sidejob</span>
+            </div>
+          </div>
+
+          <div className={styles.row}>
+            <div className={styles.cell}>
+              2018.05 - 2020.01
+            </div>
+            <div className={styles.cell}>
+              PIXTA, Inc.
+              <span className={styles.badge}>sidejob</span>
+            </div>
+          </div>
+
+          <div className={styles.row}>
+            <div className={styles.cell}>
+              2015.04 - 2019.03
+            </div>
+            <div className={styles.cell}>
+              Doshisha, Univ.
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.skillBox}>
+          <span className={styles.skillBadge}>Typescript</span>
+          <span className={styles.skillBadge}>Javascript</span>
+          <span className={styles.skillBadge}>PHP</span>
+          <span className={styles.skillBadge}>Ruby</span>
+          <span className={styles.skillBadge}>React</span>
+          <span className={styles.skillBadge}>Next</span>
+          <span className={styles.skillBadge}>Ruby On Rails</span>
+          <span className={styles.skillBadge}>Laravel</span>
+        </div>
+      </div>
+      <SnsIconList />
+    </>
   )
 }
