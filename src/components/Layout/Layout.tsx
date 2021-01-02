@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import styles from '../../styles/Layout.module.scss';
+import styles from './Layout.module.scss';
 
 export default function Layout({ children }) {
   return (

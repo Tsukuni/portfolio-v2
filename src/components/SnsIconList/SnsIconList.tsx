@@ -2,7 +2,7 @@ import React from 'react';
 import { AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
 import { RiFacebookCircleFill } from 'react-icons/ri';
 import Link from 'next/link';
-import styles from '../../styles/SnsIconList.module.scss';
+import styles from './SnsIconList.module.scss';
 
 export default function SnsIconList() {
   return (
