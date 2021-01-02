@@ -1,11 +1,14 @@
 import '../../styles/globals.scss';
-import { Layout } from '../components';
+import { Layout, Head } from '../components';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Head />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 }
 
