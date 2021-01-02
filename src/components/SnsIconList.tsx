@@ -9,19 +9,19 @@ export default function SnsIconList() {
     <div className={styles.container}>
       <Link href="https://github.com/Tsukuni">
         <a>
-          <AiFillGithub className={styles.icon}/>
+          <AiFillGithub className={styles.icon} />
         </a>
       </Link>
 
       <Link href="https://twitter.com/tteooiyry">
         <a>
-          <AiFillTwitterCircle className={styles.icon}/>
+          <AiFillTwitterCircle className={styles.icon} />
         </a>
       </Link>
 
       <Link href="https://www.facebook.com/tteooi.ryry">
         <a>
-          <RiFacebookCircleFill className={styles.icon}/>
+          <RiFacebookCircleFill className={styles.icon} />
         </a>
       </Link>
     </div>
