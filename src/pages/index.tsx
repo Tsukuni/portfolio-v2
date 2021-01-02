@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from '../../styles/Home.module.scss'
 import { AiOutlineUser } from 'react-icons/ai';
 import { GrPersonalComputer } from 'react-icons/gr';
-import SnsIconList from '../components/SnsIconList';
+import { SnsIconList } from '../components';
 
 export default function Home() {
   return (
