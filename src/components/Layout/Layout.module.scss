@@ -2,7 +2,11 @@
   min-height: 100vh;
   width: 100%;
   box-sizing: border-box;
-  padding-top: 64px;
+  padding: 64px 0;
+  @media (max-width: 676px) {
+    padding-top: 16px;
+    padding-bottom: 64px;
+  }
 }
 
 .footer {
